@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  /* background-color: #30a2ff; */
+  background-image: url("../bg.jpg");
+}
+
+.text-main {
+  color: #c70039;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+div:has(> .capatcha-box) {
+  max-height: 70px;
+}
+
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #c70039;
+  --bs-btn-border-color: #c70039;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #c70039;
+  --bs-btn-hover-border-color: #c70039;
+}
+
+form .btn-main {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input {
+  font-size: 20px;
+  padding-block: 12px !important;
+}
+
+.border-main {
+  border: 2px solid #c70039;
+}
+
+.border-main:focus {
+  box-shadow: none;
+  border: 2px solid #c70039;
+}
+
+.capatcha-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 29px;
+  transform: translate(-50%, -50%);
+  letter-spacing: 20px;
+}
+@media screen and (max-width: 992px) {
+  .wrapper > div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .wrapper > div {
+    width: 75%;
+  }
+  .capatcha-text {
+    letter-spacing: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper > div {
+    width: 100%;
+  }
+}
